@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoadingController } from '@ionic/angular';
+import { RestApiService } from '../rest-api.service';
 
 @Component({
   selector: 'app-pag2',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class Pag2Page implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(public router:Router, public api: RestApiService, public loadingController: LoadingController) { }
 
   ngOnInit() {
   }

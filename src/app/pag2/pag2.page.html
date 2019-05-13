@@ -5,14 +5,37 @@
 </ion-header>
 
 <ion-content>
+
     <ion-toolbar>
+
     <ion-searchbar animated placeholder = "Procurar" ></ion-searchbar> <br>
+
     <ion-list>
+
       <ion-item (click)="informacoes1()" >Informações</ion-item>
+
       <ion-item (click)="contato1()" >Contato</ion-item>
+
       <ion-item (click)="cliente1()" >Cliente</ion-item>
+
       <ion-item (click)="suporte1()" >Suporte</ion-item>
+
       <ion-item href="https://www.github.com/Tsuiya" >Github</ion-item>
+
     </ion-list>
+
     </ion-toolbar>
+
+    <br>
+
+    <ion-row center >
+
+        <ion-col text-center >
+
+    <ion-button fill="outline" class="btnTam" href="/home" > Sair </ion-button>
+
+    </ion-col>
+    
+    </ion-row>
+
 </ion-content>

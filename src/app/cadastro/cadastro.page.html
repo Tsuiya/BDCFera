@@ -5,5 +5,34 @@
 </ion-header>
 
 <ion-content>
-
+    <ion-img src="/assets/img1.png"></ion-img><br>
+    <ion-segment (ionChange)="segmentChanged($event)" >
+      <ion-segment-button (click)="inicio()" value="login">
+        <ion-label>Login</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="registrar">
+        <ion-label>Registrar</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  
+    <ion-list >
+      <ion-item  >
+      <ion-input [(ngModel)]="user"  placeholder="Usuário ou E-mail"></ion-input>
+      </ion-item>
+      <ion-item  >
+      <ion-input [(ngModel)]="pass" type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+    <ion-item  >
+        <ion-input [(ngModel)]="cpf" placeholder="CPF"></ion-input>
+        </ion-item>
+        <ion-item  >
+        <ion-input [(ngModel)]="rg" placeholder="RG"></ion-input>
+      </ion-item>
+    <br >
+    <ion-row center  >
+      <ion-col text-center >
+    <ion-button fill="outline" class="btnTam" (click) = 'registrar()' >Entrar</ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-list>
 </ion-content>
